@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="100"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <Button
+                android:id="@+id/no_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="1"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/no_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="2"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/no_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="3"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/no_4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="4"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/no_5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="5"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/no_6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="6"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/no_7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="7"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/no_8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="8"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/no_9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="9"
+                android:textSize="25sp"/>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tambah"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/kurang"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/kali"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="x" />
+
+            <Button
+                android:id="@+id/bagi"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="/" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sama_dengan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="="
+            android:textSize="35sp"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
