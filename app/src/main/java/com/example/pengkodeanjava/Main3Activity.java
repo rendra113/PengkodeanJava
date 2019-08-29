@@ -2,6 +2,7 @@ package com.example.pengkodeanjava;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +11,7 @@ import android.widget.TextView;
 
 public class Main3Activity extends AppCompatActivity {
     private EditText suhu;
-    private Button konversi;
+    private Button konversi,pindah;
     private TextView fahrenheit,reamur,kelvin;
 
     @Override
@@ -23,6 +24,14 @@ public class Main3Activity extends AppCompatActivity {
         fahrenheit = (TextView) findViewById(R.id.fahrenheit);
         reamur = (TextView) findViewById(R.id.reamur);
         kelvin = (TextView) findViewById(R.id.kelvin);
+        pindah = (Button) findViewById(R.id.pindah2);
+
+        pindah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent move = new Intent(Main3Activity.this,Main2Activity.class);
+            }
+        });
 
         konversi.setOnClickListener(new View.OnClickListener() {
             @Override
